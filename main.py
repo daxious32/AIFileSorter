@@ -17,7 +17,7 @@ DOWNLOADS = Path.home() / "Downloads"
 DOCUMENTS = Path.home() / "Documents"
 LOG_FILE = DOCUMENTS / "ai_file_sort_log.csv"
 
-CATEGORIES = ["IT" "IT/Jens", "Math", "History", "Coding", "Finacial Literacy", "College Prep", "English", "Other"]
+CATEGORIES = ["Math", "History", "Coding", "English", "Other"]
 
 print("Loading classification model...")
 classifier = pipeline(
@@ -150,4 +150,5 @@ if not LOG_FILE.exists():
 # === RUN ===
 if __name__ == "__main__":
     process_downloads()
+
 
